@@ -11,3 +11,80 @@
     font-style: normal; */
 }
 
+.open-sans {
+    font-family: 'Open Sans';
+}
+
+.open-sans-condensed {
+    font-family: 'Open Sans Condensed';
+}
+
+.flex {
+    display: flex;
+}
+
+.total-center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ====================================================================== */
+
+body {
+    background: #333333;
+}
+
+
+
+
+/* ====================================================================== */
+/* HEADER */
+
+.header {
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3vw;
+}
+
+.menu ul {
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu-item button {
+    border: none;
+    background: none;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.menu-item + .menu-item {
+    margin-left: 2vw;
+}
+
+.header-phone a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+/* ====================================================================== */
+/*  */
