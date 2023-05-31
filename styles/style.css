@@ -4,3 +4,10 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/Open\ Sans\ Condensed');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
