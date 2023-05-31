@@ -54,6 +54,18 @@ body {
     list-style: none;
 }
 
+.menu-item {
+    padding-bottom: 5px;
+}
+
+.menu-item:hover, .header-phone a:hover {
+    border-bottom: #D1A954;
+    border-width: 2px;
+    border-style: solid;
+
+    cursor: pointer;
+}
+
 .menu-item button {
     border: none;
     background: none;
@@ -73,6 +85,8 @@ body {
 }
 
 .header-phone a {
+    padding-bottom: 5px;
+
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
