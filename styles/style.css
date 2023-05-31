@@ -87,4 +87,80 @@ body {
 
 
 /* ====================================================================== */
-/*  */
+/* MAIN */
+
+.main-button{
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    background: #D1A954;
+    padding: 20px 50px;
+    border: none;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ГЛАВНАЯ СТРАНИЦА */
+
+.main-section {
+    flex-direction: row;
+}
+
+.contact-vertical {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-vertical p {
+    transform: rotate(270deg);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #C4C4C4;
+}
+
+.main-items {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-item {
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.main-item h1 {
+    margin-bottom: 2vw;
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.main-item p {
+    margin-bottom: 2vw;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+}
