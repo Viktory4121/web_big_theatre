@@ -6,9 +6,9 @@
 
 @font-face {
     font-family: 'Open Sans Condensed';
-    src: url('../fonts/Open\ Sans\ Condensed');
-    /* font-weight: normal;
-    font-style: normal; */
+    src: url('../fonts/Open\ Sans\ Condensed/OpenSansCondensed-Bold.ttf'),
+    url('../fonts/Open\ Sans\ Condensed/OpenSansCondensed-Light.ttf'),
+    url('../fonts/Open\ Sans\ Condensed/OpenSansCondensed-LightItalic');
 }
 
 .open-sans {
@@ -104,6 +104,16 @@ body {
     padding: 20px 50px;
     border: none;
 }
+
+.main-button:hover {
+    background: #b89342;
+}
+
+.main-button:active{
+    background: #e8c16f;
+}
+
+
 
 /* ---------------------------------------------------------------------- */
 /* ГЛАВНАЯ СТРАНИЦА */
