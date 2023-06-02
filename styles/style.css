@@ -407,3 +407,66 @@ h2 span {
     margin: 2vw;
 }
 
+
+
+/* ---------------------------------------------------------------------- */
+/* стать меценатом */
+
+.input-forms {
+    flex-direction: column;
+    padding: 5vw 1vw;
+}
+
+.input-block {
+    flex-direction: row;
+}
+
+.input-contacts{
+    flex-direction: column;
+}
+
+.input-contacts a {
+    text-decoration: none;
+
+    /* font-weight: 700; */
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.input-contacts-item + .input-contacts-item {
+    margin-top: 1vw;
+}
+
+
+
+
+
+
+
+.input-items {
+    flex-direction: row;
+}
+
+.input-item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.input-send-info {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-send-info p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+
+    width: 390px;
+}
