@@ -436,9 +436,9 @@ h2 span {
 }
 
 .textarea-item textarea {
-    width: 310px;
     height: 8vw;
     margin: 1vw;
+    width: 310px;
 }
 
 .input-item input:hover,
@@ -468,4 +468,27 @@ h2 span {
 
 .input-send-info button {
     margin: 1vw;
+}
+
+
+
+/* ====================================================================== */
+/* footer */
+
+#index-footer-block{
+
+    border-top: 1px solid #565656;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+    width: 60%;
+}
+
+#index-footer-block p,
+#index-footer-block a {
+    color: #989898;
+    font-size: 12px;   
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
 }
