@@ -382,3 +382,28 @@ h2 span {
 
     width: 540px;
 }
+
+
+
+/* ---------------------------------------------------------------------- */
+/* партнёры театра */
+
+.partners-info {
+    flex-direction: column;
+    padding: 5vw 1vw;
+}
+
+.partner-logo {
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.partner-item {
+    width: 200px;
+    height: 96px;
+}
+
+.partner-item{
+    margin: 2vw;
+}
+
