@@ -305,7 +305,7 @@ h2 span {
 
 .rating-back-img {
     background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)),
-    url(../images/премия.png);
+    url(../images/премия.png) no-repeat center center;
     background-size: 100% auto;
     height: 550px;
     justify-content: space-around;
@@ -476,7 +476,6 @@ h2 span {
 /* footer */
 
 #index-footer-block{
-
     border-top: 1px solid #565656;
     flex-direction: row;
     justify-content: space-between;
