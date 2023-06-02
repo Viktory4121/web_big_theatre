@@ -324,3 +324,61 @@ h2 span {
     flex-direction: column;
     padding: 5vw 1vw;
 }
+
+
+
+/* ---------------------------------------------------------------------- */
+/* рейтинг театра */
+
+.rating-info {
+    padding: 5vw 1vw;
+}
+
+.rating-back-img {
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)),
+    url(../images/премия.png);
+    background-size: 100% auto;
+
+    width: 1110px;
+    height: 550px;
+
+    justify-content: space-around;
+}
+
+.rating-years {
+    flex-direction: column;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    
+    color: #D1A954;
+}
+
+.rating-year + .rating-year {
+    margin-top: 3vw;
+}
+
+.rating-stars {
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: 2vw;
+}
+
+.rating-text {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rating-text p {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+
+    width: 540px;
+}
