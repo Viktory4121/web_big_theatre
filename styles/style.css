@@ -33,20 +33,20 @@
 
 /* ====================================================================== */
 
-body {
-    background: #333333;
-}
-
 
 
 
 /* ====================================================================== */
 /* HEADER */
 
+
 .header {
     flex-direction: row;
     justify-content: space-around;
-    padding: 3vw;
+    padding: 3vw 3vw 3vw 10vw;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
 .menu ul {
@@ -117,16 +117,41 @@ body {
 /* ---------------------------------------------------------------------- */
 /* ГЛАВНАЯ СТРАНИЦА */
 
-.main-section {
+
+.main-section-back {
+    background-image: url(../images/главный_экран.png) no-repeat center center;
+    background-size: 100% auto;
+    
+
     flex-direction: row;
-    padding: 5vw 1vw;
+    /* height: 100%; */
+    padding: 10vw 1vw 5vw 1vw;
+    position: relative;
+    /* width: 100%; */
+    opacity: 0.85;
+}
+
+.main-section {
+    /* background: url(images/главный_экран.png) no-repeat center center,
+        linear-gradient(0deg, rgba(51, 51, 51, 0.85), 
+        rgba(51, 51, 51, 0.85)); */
+    background-color: rgba(51, 51, 51, 0.85);
+    /* background-size: 100% auto; */
+    /* background-blend-mode: color; */
+    
 }
 
 .contact-vertical {
     align-items: center;
     background: rgba(51, 51, 51, 0.75);
     flex-direction: column;
+    height: 100%;
     justify-content: flex-end;
+    left: 0;
+    padding: 2vw 2.5vw;
+    position: absolute;
+    top: 0;
+    z-index: 12;
 }
 
 .contact-vertical p {
@@ -136,7 +161,8 @@ body {
     letter-spacing: 0.1em;
     line-height: 25px;
     text-transform: uppercase;
-    transform: rotate(270deg);
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
 }
 
 .contact-vertical svg{
@@ -157,24 +183,27 @@ body {
 
 .contact-vertical-line {
     background-color: #C4C4C4;
-    height: 3px;
-    margin-bottom: 5vw;
-    margin-top: 8vw;
-    transform: rotate(90deg);
-    width: 80px;
+    height: 80px;
+    margin: 2vw 0;
+    width: 3px;
 }
 
 /* ---------------------------- */
 
 .main-items {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    padding-left: 10vw;
 }
 
 .main-item {
     flex-direction: column;
     justify-content: center;
     width: 40%;
+}
+
+.main-item + .main-item {
+    margin-left: 3vw;
 }
 
 .main-item h1 {
@@ -225,6 +254,7 @@ h2 span {
 /* О ТЕАТРЕ */
 
 .about-theatre{
+    background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
 }
@@ -291,6 +321,7 @@ h2 span {
 /* постановки */
 
 .performance-info{
+    background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
 }
@@ -301,6 +332,7 @@ h2 span {
 /* рейтинг театра */
 
 .rating-info {
+    background: #333333;
     padding: 5vw 1vw;
 }
 
@@ -352,6 +384,7 @@ h2 span {
 /* партнёры театра */
 
 .partners-info {
+    background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
 }
@@ -376,6 +409,7 @@ h2 span {
 /* стать меценатом */
 
 .input-forms {
+    background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
 }
@@ -489,6 +523,9 @@ h2 span {
 
 /* ====================================================================== */
 /* footer */
+footer {
+    background: #333333;
+}
 
 #index-footer-block{
     border-top: 1px solid #565656;
