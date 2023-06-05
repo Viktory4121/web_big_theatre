@@ -106,6 +106,7 @@
 
 .main-button:hover {
     background: #b89342;
+    cursor: pointer;
 }
 
 .main-button:active{
@@ -128,7 +129,7 @@
 .main-section {
     background: url(../images/главный_экран.png) no-repeat center center;
     background-size: 100% auto;
-    
+    border-bottom: 2px dashed #C4C4C4;
 }
 
 .contact-vertical {
@@ -138,7 +139,7 @@
     height: 100%;
     justify-content: flex-end;
     left: 0;
-    padding: 2vw 2.5vw;
+    padding: 3vw 2.5vw;
     position: absolute;
     top: 0;
     z-index: 12;
