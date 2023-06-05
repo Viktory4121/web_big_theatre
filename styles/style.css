@@ -119,25 +119,15 @@
 
 
 .main-section-back {
-    background-image: url(../images/главный_экран.png) no-repeat center center;
-    background-size: 100% auto;
-    
-
+    background-color: rgba(51, 51, 51, 0.85);
     flex-direction: row;
-    /* height: 100%; */
     padding: 10vw 1vw 5vw 1vw;
     position: relative;
-    /* width: 100%; */
-    opacity: 0.85;
 }
 
 .main-section {
-    /* background: url(images/главный_экран.png) no-repeat center center,
-        linear-gradient(0deg, rgba(51, 51, 51, 0.85), 
-        rgba(51, 51, 51, 0.85)); */
-    background-color: rgba(51, 51, 51, 0.85);
-    /* background-size: 100% auto; */
-    /* background-blend-mode: color; */
+    background: url(../images/главный_экран.png) no-repeat center center;
+    background-size: 100% auto;
     
 }
 
