@@ -431,6 +431,15 @@ h2 span {
     padding: 15px;
 }
 
+.textarea-item textarea::placeholder,
+.input-item input::placeholder{
+    font-family: 'Open Sans';
+    color: #989898;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
 .input-item input{
     margin: 1vw;
 }
