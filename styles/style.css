@@ -385,6 +385,7 @@ h2 span {
 
 .input-contacts{
     flex-direction: column;
+    padding: 1vw;
 }
 
 .input-contacts a {
@@ -397,11 +398,15 @@ h2 span {
     text-transform: uppercase;
 }
 
-.input-contacts-item + .input-contacts-item {
+.input-contacts-item + .input-contacts-item,
+.input-contacts-tel + .input-contacts-add {
     margin-top: 1vw;
 }
 
-
+.input-contacts-tel,
+.input-contacts-add {
+    flex-direction: column;
+}
 
 
 /* ----------------- */
