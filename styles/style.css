@@ -128,7 +128,7 @@
 
 .main-section {
     background: url(../images/главный_экран.png) no-repeat center center;
-    background-size: 100% auto;
+    background-size: cover auto;
     border-bottom: 2px dashed #C4C4C4;
 }
 

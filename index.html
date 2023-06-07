@@ -8,6 +8,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_slyder_button.css">
     <!-- <link rel="stylesheet" href="styles/style_media.css"> -->
     
     <!-- Fonts -->
@@ -74,17 +75,50 @@
                     <div><button class="main-button">афиша</button></div>
                 </div>
 
+                <!-- slyder -->
                 <div class="main-item">
-                    <!-- slyder -->
-                    <img src="images/afisha.png" alt="">
+                    <div class="slyder-buttons">
+                        <ol class="slyder-viewport">
+                            <li id="slyde-b-1" tabindex="0" class="slyder-slide">
+                                <div class="slyder-snapper">
+                                    <img src="images/afisha.png" alt="">
+                                </div>
+                                
+                                <div class="slyder-button-block flex">
+                                    <a href="#slyde-b-2" class="slyde-button-back">Пред</a>
+                                    <a href="#slyde-b-2" class="slyde-button-next">След</a>
+                                </div>
+                                
+                            </li>
+
+                            <li id="slyde-b-2" tabindex="0" class="slyder-slide">
+                                <div class="slyder-snapper">
+                                    <img src="images/постановка1.png" alt="">
+                                </div>
+
+                                <div class="slyder-button-block flex">
+                                    <a href="#slyde-b-1" class="slyde-button-back">Пред</a>
+                                    <a href="#slyde-b-1" class="slyde-button-next">След</a>
+                                </div>
+                                
+
+                                
+                            </li>
+                        </ol>
+                    </div>
+                    
+
+
+                    <!-- <div class="slyder-buttons-block">
+                        <button class="slyder-button slyder-back">Пред</button>
+                        <button class="slyder-button slyder-next">След</button>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
     <main>
-        
-
         <section class="about-theatre total-center-flex">
             <h2><span>о</span> театре</h2>
 
@@ -205,5 +239,7 @@
         </div>
     </footer>
 
+
+    <script src="scripts/script_slyder_button.js"></script>
 </body>
 </html>

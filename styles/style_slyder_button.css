@@ -1,0 +1,185 @@
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+}
+
+@keyframes tostart {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: -300%;
+    }
+    98% {
+        left: -300%;
+    }
+    99% {
+        left: 0;
+    }
+}
+
+@keyframes snap {
+    96% {
+        scroll-snap-align: center;
+    }
+    97% {
+        scroll-snap-align: none;
+    }
+    99% {
+        scroll-snap-align: none;
+    }
+    100% {
+        scroll-snap-align: center;
+    }
+}
+
+/* --------------------------------------- */
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+  
+*::-webkit-scrollbar {
+    width: 0;
+}
+  
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+
+/* --------------------------------------- */
+
+.slyder-buttons {
+    filter: drop-shadow(0 0 10px #0003);
+}
+
+.slyder-buttons ol,
+.slyder-buttons li {
+    list-style: none;
+}
+
+.slyder-buttons a {
+    color: #C4C4C4;
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.slyder-viewport {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    width: 100%;
+    height: 100%;
+}
+
+.slyder-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.slyder-slide:before {
+    position: absolute;
+    transform: translate3d(-50%, -40%, 70px);
+}
+
+.slyder-snapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* justify-content: center; */
+    margin-bottom: 3vw;
+    scroll-snap-align: center;
+    width: 100%;
+}
+
+.slyder-snapper img {
+    width: 350px;
+    height: 450px;
+
+}
+
+@media (hover: hover) {
+    .slyder-snapper {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .slyder-slide:last-child .slyder-snapper {
+        animation-name: tostart, snap;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slyder-snapper {
+        animation-name: none;
+    }
+}
+
+/* ------------------------------------------- */
+
+.slyder-buttons:hover .slyder-snapper,
+.slyder-buttons:focus-within .slyder-snapper {
+    animation-name: none;
+}
+
+.slyder-buttons::before,
+.slyder-buttons::after,
+.slyde-button-back,
+.slyde-button-next {
+    /* position: absolute; */
+    bottom: 0;
+    width: 4rem;
+
+    outline: 0;
+}
+
+.slyder-buttons::before,
+.slyde-button-back {
+    /* left: -1rem; */
+}
+
+.slyder-buttons::after,
+.slyde-button-next {
+    right: -1rem;
+}
+
+.slyder-buttons::before,
+.slyder-buttons::after {
+    content: '';
+    z-index: 3;
+    pointer-events: none;
+}
+
+.slyder-button-block {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
