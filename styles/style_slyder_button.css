@@ -88,18 +88,17 @@
 
 .slyder-viewport {
     display: flex;
+    height: 100%;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-
     width: 100%;
-    height: 100%;
 }
 
 .slyder-slide {
     flex: 0 0 100%;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .slyder-slide:before {
@@ -112,24 +111,22 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* justify-content: center; */
     margin-bottom: 3vw;
     scroll-snap-align: center;
     width: 100%;
 }
 
 .slyder-snapper img {
-    width: 350px;
     height: 450px;
-
+    width: 350px;
 }
 
 @media (hover: hover) {
     .slyder-snapper {
-        animation-name: tonext, snap;
-        animation-timing-function: ease;
         animation-duration: 4s;
         animation-iteration-count: infinite;
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
     }
 
     .slyder-slide:last-child .slyder-snapper {
@@ -154,32 +151,23 @@
 .slyder-buttons::after,
 .slyde-button-back,
 .slyde-button-next {
-    /* position: absolute; */
     bottom: 0;
-    width: 4rem;
-
     outline: 0;
-}
-
-.slyder-buttons::before,
-.slyde-button-back {
-    /* left: -1rem; */
-}
-
-.slyder-buttons::after,
-.slyde-button-next {
-    right: -1rem;
 }
 
 .slyder-buttons::before,
 .slyder-buttons::after {
     content: '';
-    z-index: 3;
     pointer-events: none;
+    z-index: 3;
 }
 
 .slyder-button-block {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+.left-arrow {
+    transform: rotate(180deg);
 }
