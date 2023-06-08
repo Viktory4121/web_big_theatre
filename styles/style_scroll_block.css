@@ -1,28 +1,3 @@
-/* * {
-    -ms-overflow-style: none;
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
-}
-  
-*::-webkit-scrollbar {
-    width: 0;
-}
-  
-*::-webkit-scrollbar-track {
-    background: transparent;
-}
-  
-*::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-} */
-
-
-
-/* ============================================== */
-
-
-
 .slyder-scroll::-webkit-scrollbar {
     width: 10px;               /* ширина scrollbar */
 }
@@ -47,14 +22,10 @@
 
 .slyder-scroll {
     flex-direction: row;
-    /* height: 100%; */
     margin: 0 10vw;
-    /* margin-right: 100px; */
     overflow-x: scroll;
     padding-bottom: 2vw;
     padding-left: 10vw;
-    /* scroll-behavior: smooth;
-    scroll-snap-type: x mandatory; */
     width: 100%;
 }
 
