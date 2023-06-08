@@ -1,0 +1,100 @@
+/* * {
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+  
+*::-webkit-scrollbar {
+    width: 0;
+}
+  
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+} */
+
+
+
+/* ============================================== */
+
+
+
+.slyder-scroll::-webkit-scrollbar {
+    width: 10px;               /* ширина scrollbar */
+}
+.slyder-scroll::-webkit-scrollbar-track {
+    /* background: orange;  */       /* цвет дорожки */
+}
+.slyder-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(51, 51, 51);    /* цвет плашки */
+    border-radius: 15px;       /* закругления плашки */
+    border: 3px solid rgb(165, 165, 165);  /* padding вокруг плашки */
+}
+
+.slyder-scroll::-webkit-scrollbar-thumb:hover{
+    border: 3px solid #D1A954;
+}
+
+
+
+/* ============================================== */
+
+
+
+.slyder-scroll {
+    flex-direction: row;
+    /* height: 100%; */
+    margin-left: 150px;
+    margin-right: 100px;
+    overflow-x: scroll;
+    padding-bottom: 2vw;
+    /* scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; */
+    width: 100%;
+}
+
+.slyder-scroll-item {
+    height: 550px;
+    min-width: 400px;
+}
+
+.slyder-scroll-item-grey {
+    background: rgba(51, 51, 51);
+    height: 100%;
+    opacity: 0.65;
+    width: 100%;
+    z-index: 2;
+}
+
+.slyder-scroll-item:hover .slyder-scroll-item-grey {
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+
+/* ================================================= */
+
+#slyde-s-1{
+    background: url(../images/постановка1.png) no-repeat center center;
+    background-size: cover;
+}
+
+#slyde-s-2{
+    background: url(../images/постановка2.png) no-repeat center center;
+    background-size: cover;
+}
+
+#slyde-s-3{
+    background: url(../images/постановка3.png) no-repeat center center;
+    background-size: cover;
+}
+
+#slyde-s-4{
+    background: url(../images/постановка4.png) no-repeat center center;
+    background-size: cover;
+}
