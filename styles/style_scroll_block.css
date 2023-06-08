@@ -48,10 +48,11 @@
 .slyder-scroll {
     flex-direction: row;
     /* height: 100%; */
-    margin-left: 150px;
-    margin-right: 100px;
+    margin: 0 10vw;
+    /* margin-right: 100px; */
     overflow-x: scroll;
     padding-bottom: 2vw;
+    padding-left: 10vw;
     /* scroll-behavior: smooth;
     scroll-snap-type: x mandatory; */
     width: 100%;
