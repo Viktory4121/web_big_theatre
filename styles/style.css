@@ -79,6 +79,7 @@ body {
     /* font-weight: 700; */
     line-height: 25px;
     letter-spacing: 0.1em;
+    padding-bottom: 8px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -93,6 +94,7 @@ body {
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0.05em;
+    padding-bottom: 8px;
     text-align: right;
     text-decoration: none;
     text-transform: uppercase;

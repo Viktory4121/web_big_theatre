@@ -14,7 +14,7 @@
     <!-- ВЕРСИЯ С 3Д СЛАЙДЕРОМ -->
     <!-- <link rel="stylesheet" href="styles/style_slyder_scroll.css"> -->
 
-    <!-- <link rel="stylesheet" href="styles/style_media.css"> -->
+    <link rel="stylesheet" href="styles/style_media.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
     <header id="header" class="flex">
         <div class="menu">
             <ul class="flex os-c-bold">
-                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><button>Главная</button></li>
                 <li class="menu-item"><button id="button-about-theatre">О театре</button></li>
                 <li class="menu-item"><button id="button-performance-info">Наши постановки</button></li>
                 <li class="menu-item"><button id="button-partners-info">Партнеры театра</button></li>
@@ -81,7 +81,7 @@
                 </div>
 
                 <!-- slyder -->
-                <div class="main-item">
+                <div class="main-item main-slyder">
                     <div class="slyder-buttons">
                         <ol class="slyder-viewport">
                             <li id="slyde-b-1" tabindex="0" class="slyder-slide">
@@ -318,13 +318,14 @@
                         <a class="input-contacts-item" href="tel:+78121234555">+7 (812) 123-45-55</a>
                         <a class="input-contacts-item" href="tel:+78121234566">+7 (812) 123-45-66</a>
                     </div>
+                    
                     <div class="input-contacts-add flex">
                         <a class="input-contacts-item" href="mailto:info@theater.ru">info@theater.ru</a>
                         <a class="input-contacts-item" href="#">г. санкт-петербург, невский 140</a>
                     </div>
                 </div>
 
-                <div>
+                <div id="input-form">
                     <form class="input-items flex" action="">
                         <div class="input-item flex open-sans">
                             <input class="input-item-st" type="text" placeholder="Имя">
