@@ -49,10 +49,35 @@
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     
-}
+} */
 
-@media (max-width: 576px) {
-    
+@media screen and (max-width: 576px) {
+    .about-items {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-item,
+    .about-numbers-block {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #about-text,
+    .about-number-item {
+        text-align: center;
+    }
+
+    .about-item + .about-item {
+        margin-left: 0;
+        margin-top: 5vw;
+    }
+
+    .about-number-img {
+        display: flex;
+        justify-content: center;
+    }
 }
