@@ -23,23 +23,23 @@
 
 </head>
 <body>
-    <header class="header os-c-bold flex">
+    <header id="header" class="flex">
         <div class="menu">
-            <ul class="flex">
-                <li class="menu-item"><a>Главная</a></li>
-                <li class="menu-item"><a>О театре</a></li>
-                <li class="menu-item"><a>Наши постановки</a></li>
-                <li class="menu-item"><a>Партнеры театра</a></li>
-                <li class="menu-item"><a>Контакты</a></li>
+            <ul class="flex os-c-bold">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><button id="button-about-theatre">О театре</button></li>
+                <li class="menu-item"><button id="button-performance-info">Наши постановки</button></li>
+                <li class="menu-item"><button id="button-partners-info">Партнеры театра</button></li>
+                <li class="menu-item"><button id="button-input-forms">Контакты</button></li>
             </ul>
         </div>
 
-        <div class="header-phone">
+        <div class="header-phone os-c-bold">
             <a href="tel:+74951234567">+7 495 123-45-67</a>
         </div>
     </header>
 
-    <section class="main-section flex">
+    <section id="main-section" class="flex">
         <div class="main-section-back flex">
             <div class="contact-vertical os-c-bold flex">
                 <div class="contact-vert-text"><p>контактная информация</p></div>
@@ -141,7 +141,7 @@
     </section>
 
     <main>
-        <section class="about-theatre total-center-flex">
+        <section id="about-theatre" class="total-center-flex">
             <h2><span>о</span> театре</h2>
 
             <div class="about-items os-c-bold flex">
@@ -170,7 +170,7 @@
             </div>
         </section>
 
-        <section class="performance-info total-center-flex">
+        <section id="performance-info" class="total-center-flex">
             <h2><span>наши</span> постановки</h2>
 
 
@@ -272,7 +272,7 @@
             </div>
         </section>
 
-        <section class="rating-info total-center-flex">
+        <section id="rating-info" class="total-center-flex">
             <div class="rating-back-img flex">
                 <div class="rating-years flex os-c-bold">
                     <span class="rating-year">2018</span>
@@ -294,7 +294,7 @@
             </div>
         </section>
 
-        <section class="partners-info total-center-flex">
+        <section id="partners-info" class="total-center-flex">
             <h2><span>партнеры</span> театра</h2>
 
             <div class="partner-logo total-center-flex">
@@ -309,7 +309,7 @@
             </div>
         </section>
 
-        <section class="input-forms total-center-flex">
+        <section id="input-forms" class="total-center-flex">
             <h2><span>стать</span> меценатом</h2>
 
             <div class="input-block flex">
@@ -356,6 +356,6 @@
     </footer>
 
 
-    <script src="scripts/script_slyder_button.js"></script>
+    <script src="scripts/script_scroll.js"></script>
 </body>
 </html>

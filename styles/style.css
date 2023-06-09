@@ -47,7 +47,7 @@ body {
 /* HEADER */
 
 
-.header {
+#header {
     flex-direction: row;
     justify-content: space-around;
     padding: 3vw 3vw 3vw 10vw;
@@ -62,18 +62,24 @@ body {
 }
 
 .menu-item a:hover, 
-.header-phone a:hover {
+.header-phone a:hover,
+.menu-item button:hover {
     border-bottom: 3px solid #D1A954;
     cursor: pointer;
     padding-bottom: 5px;
 }
 
-.menu-item a {
+.menu-item a,
+.menu-item button {
+    background: transparent;
+    border: none;
     color: #FFFFFF;
+    font-family: 'Open Sans Condensed';
     font-size: 18px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 25px;
     letter-spacing: 0.1em;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -133,7 +139,7 @@ body {
     position: relative;
 }
 
-.main-section {
+#main-section {
     background: url(../images/главный_экран.png) no-repeat center center;
     background-size: cover auto;
     border-bottom: 2px dashed #C4C4C4;
@@ -251,7 +257,7 @@ h2 span {
 /* ---------------------------------------------------------------------- */
 /* О ТЕАТРЕ */
 
-.about-theatre{
+#about-theatre{
     background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
@@ -318,7 +324,7 @@ h2 span {
 /* ---------------------------------------------------------------------- */
 /* постановки */
 
-.performance-info{
+#performance-info{
     background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
@@ -329,7 +335,7 @@ h2 span {
 /* ---------------------------------------------------------------------- */
 /* рейтинг театра */
 
-.rating-info {
+#rating-info {
     background: #333333;
     padding: 5vw 1vw;
 }
@@ -381,7 +387,7 @@ h2 span {
 /* ---------------------------------------------------------------------- */
 /* партнёры театра */
 
-.partners-info {
+#partners-info {
     background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
@@ -406,7 +412,7 @@ h2 span {
 /* ---------------------------------------------------------------------- */
 /* стать меценатом */
 
-.input-forms {
+#input-forms {
     background: #333333;
     flex-direction: column;
     padding: 5vw 1vw;
