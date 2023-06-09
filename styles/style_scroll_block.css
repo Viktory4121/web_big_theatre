@@ -35,16 +35,28 @@
 }
 
 .slyder-scroll-item-grey {
-    background: rgba(51, 51, 51);
+    background: rgba(51, 51, 51, 0.65);
     height: 100%;
-    opacity: 0.65;
     width: 100%;
     z-index: 2;
 }
 
 .slyder-scroll-item:hover .slyder-scroll-item-grey {
+    background: transparent;
     cursor: pointer;
+}
+
+.slyder-icon {
+    background: url(../images/magnifier.svg) no-repeat center center,
+              rgb(209, 169, 84);
+    border-radius: 50%;
+    height: 100px;
     opacity: 0;
+    width: 100px;
+}
+
+.slyder-scroll-item:hover .slyder-icon {
+    opacity: 1;
 }
 
 
