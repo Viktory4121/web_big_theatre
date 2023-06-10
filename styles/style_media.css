@@ -53,8 +53,6 @@
 @media screen and (max-width: 768px) {
     #header {
         align-items: end;
-        /* flex-direction: row; */
-        /* justify-content: space-between; */
         padding: 3vw;
     }
 
@@ -93,21 +91,51 @@
 
 
 
+    .burger-exit-block {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .burger-exit {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        height: 25px;
+        margin-bottom: 10vw;
+        position: relative;
+        width: 25px;
+    }
+
+    .burger-exit:focus ~ #menu-mobile {
+        left: -100%;
+    }
+
+    .burger-exit .burger-line {
+        width: 100%;
+    }
+
+    .burger-exit .burger-line{
+        position: absolute;
+    }
+
+    #burder-exit-1{
+        transform: rotate(45deg);
+    }
+    #burder-exit-2{
+        transform: rotate(-45deg);
+    }
+
+
+
     #menu-mobile {
         background: #333;
         height: 100%;
         left: -100%;
-        padding: 10vw 2vw;
+        padding: 5vw 3vw;
         /* position: absolute; */ /* на высоту главного блока + хедер */
         position: fixed; /* на всю высоту экрана */
         top: 0;
         transition: left .3s linear;
-
-        /* плавный переход смещения панели */
-        /* -webkit-transition: left 0.3s;
-        -moz-transition: left 0.3s;
-        transition: left 0.3s; */
-
         width: 40%;
         z-index: 20;
     }
@@ -125,9 +153,16 @@
         font-size: 24px;
         line-height: 33px;
         letter-spacing: 0.05em;
+        padding-bottom: 8px;
         text-align: left;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    .menu-mobile-item button:hover {
+        border-bottom: 3px solid #D1A954;
+        cursor: pointer;
+        padding-bottom: 5px;
     }
 
     .menu-mobile-item + .menu-mobile-item {
