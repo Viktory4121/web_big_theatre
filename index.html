@@ -40,7 +40,27 @@
     </header>
 
     <section id="main-section" class="flex">
+        
         <div class="main-section-back flex">
+            <button class="burger flex">
+                <div id="burder-1" class="burger-line"></div>
+                <div id="burder-2" class="burger-line"></div>
+                <div id="burder-3" class="burger-line"></div>
+            </button>
+
+            <div id="menu-mobile">
+                <input type="checkbox" id="nav-toggle" hidden>
+                <div class="menu-mobile-items">
+                    <ul class="flex os-c-bold">
+                        <li class="menu-mobile-item"><button>Главная</button></li>
+                        <li class="menu-mobile-item"><button>О театре</button></li>
+                        <li class="menu-mobile-item"><button >Наши постановки</button></li>
+                        <li class="menu-mobile-item"><button>Партнеры театра</button></li>
+                        <li class="menu-mobile-item"><button>Контакты</button></li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="contact-vertical os-c-bold flex">
                 <div class="contact-vert-text"><p>контактная информация</p></div>
                 <div class="contact-vert-line"><div class="contact-vertical-line"></div></div>
@@ -339,7 +359,7 @@
                             <input class="input-item-st" type="email" placeholder="E-mail">
                         </div>
 
-                        <div class="textarea-item open-sans">
+                        <div class="textarea-item flex open-sans">
                             <textarea placeholder="Сообщение"></textarea>
                         </div>
                     </form>
