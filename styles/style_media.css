@@ -1,9 +1,7 @@
 @media (max-width: 992px) {
     #header {
         align-items: center;
-        /* flex-wrap: wrap; */
         flex-direction: column;
-        /* justify-content: center; */
     }
 
     .header-phone {
@@ -50,7 +48,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     #header {
         align-items: end;
         padding: 3vw;
@@ -183,6 +181,12 @@
 
 
 
+    #about-theatre{
+        padding: 5vw 3vw;
+    }
+
+
+
     .input-contacts{
         padding: 2vw;
     }
@@ -225,7 +229,7 @@
     }
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     .about-items {
         align-items: center;
         flex-direction: column;
