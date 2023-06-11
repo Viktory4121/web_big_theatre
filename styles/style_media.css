@@ -48,7 +48,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen, (max-width: 768px) {
     #header {
         align-items: end;
         padding: 3vw;
@@ -123,8 +123,6 @@
         transform: rotate(-45deg);
     }
 
-
-
     #menu-mobile {
         background: #333;
         height: 100%;
@@ -166,9 +164,7 @@
     .menu-mobile-item + .menu-mobile-item {
         margin-top: 3vw;
     }
-
-
-
+    
     .menu,
     .contact-vertical {
         display: none;
@@ -183,6 +179,20 @@
 
     #about-theatre{
         padding: 5vw 3vw;
+    }
+
+
+    .rating-back-img{
+        padding: 5vw 3vw;
+    }
+    .rating-years{
+        font-size: 55px;
+    }
+    .rating-text{
+        margin-left: 5vw;
+    }
+    .rating-text p{
+        font-size: 25px;
     }
 
 
@@ -229,7 +239,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media screen, (max-width: 576px) {
     .about-items {
         align-items: center;
         flex-direction: column;
