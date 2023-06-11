@@ -311,6 +311,11 @@ h2 span {
     width: 70px;
 }
 
+#about-num-flex,
+.about-numbers-block {
+    flex-direction: column;
+}
+
 .about-numbers-block + .about-numbers-block {
     margin-top: 2vw;
 }

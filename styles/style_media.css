@@ -259,15 +259,27 @@
         flex-direction: column;
     }
 
-    .about-item,
-    .about-numbers-block {
+    #about-num-flex{
+        flex-direction: row;
+    }
+
+    .about-item {
         align-items: center;
         justify-content: center;
         width: 100%;
     }
 
-    #about-text,
-    .about-number-item {
+    .about-numbers-block + .about-numbers-block {
+        margin-left: 5vw;
+        margin-top: 0;
+    }
+
+    .about-numbers-block {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #about-text {
         text-align: center;
     }
 
@@ -276,8 +288,7 @@
         margin-top: 5vw;
     }
 
-    .about-number-img {
-        display: flex;
-        justify-content: center;
+    .about-number-item {
+        /* padding-top: 0; */
     }
 }
