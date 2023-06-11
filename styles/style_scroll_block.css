@@ -6,8 +6,8 @@
 }
 .slyder-scroll::-webkit-scrollbar-thumb {
     background-color: rgba(51, 51, 51);    /* цвет плашки */
-    border-radius: 15px;       /* закругления плашки */
     border: 3px solid rgb(165, 165, 165);  /* padding вокруг плашки */
+    border-radius: 15px;       /* закругления плашки */
 }
 
 .slyder-scroll::-webkit-scrollbar-thumb:hover{
